@@ -25,4 +25,4 @@ $ docker run -p 8080:8080 -e GIPHY_API_KEY=your_api_key friendsofgo/giphyneitor
 
 And then you can navigate to `http://localhost:8080` and see something similar to:
 
-![giphyneitor](https://res.cloudinary.com/fogo/image/upload/c_scale,w_500/v1589561912/giphyneitor_run.png)
+![giphyneitor](https://res.cloudinary.com/fogo/image/upload/c_scale,w_500/v1589566547/fogo/blog/giphyneitor_mood.png)
