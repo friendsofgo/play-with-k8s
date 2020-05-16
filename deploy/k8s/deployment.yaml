@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: giphyneitor
+  name: giphyneitor
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: giphyneitor
+  template:
+    metadata:
+      labels:
+        app: giphyneitor
+    spec:
+      containers:
+        - image: friendsofgo/giphyneitor:latest
+          name: web
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: giphyneitor-config
